@@ -2,19 +2,19 @@
 // Component: Datepicker
 //
 // ========================================================================
-
+@import "../../src/less/components/datepicker.less";
 
 // Variables
 // ========================================================================
 
 @datepicker-nav-margin-bottom:                  @global-margin;
-@datepicker-nav-color:                          @global-color;
-@datepicker-nav-hover-color:                    @global-color;
+@datepicker-nav-color:                          @global-contrast-color;
+@datepicker-nav-hover-color:                    @global-contrast-color;
 
-@datepicker-table-color:                        @global-color;
+@datepicker-table-color:                        @global-contrast-color;
 
-@datepicker-table-hover-color:                  @global-color;
-@datepicker-table-onclick-color:                @global-color;
+@datepicker-table-hover-color:                  @global-contrast-color;
+@datepicker-table-onclick-color:                @global-contrast-color;
 
 @datepicker-table-active-background:            @global-primary-background;
 @datepicker-table-active-color:                 @global-contrast-color;
@@ -25,7 +25,9 @@
 // Component
 // ========================================================================
 
-.hook-datepicker-nav() {}
+.hook-datepicker-nav() {
+	color: @global-contrast-color;
+}
 
 .hook-datepicker-nav-item() {}
 
